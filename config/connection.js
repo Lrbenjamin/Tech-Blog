@@ -8,9 +8,16 @@ const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST,
     dialect: 'postgres',
-    port: process.env.DB_PORT,
-    logging: false // Disable logging for a cleaner output
+    port: process.env.DB_PORT || 5432,
+    logging: false,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false, // Set this to true if SSL certificate verification is required
+      },
+    },
   }
 );
 
 module.exports = sequelize;
+
