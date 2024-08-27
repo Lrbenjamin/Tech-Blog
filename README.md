@@ -53,8 +53,8 @@ To get a local copy up and running, follow these simple steps:
    ```bash
    npm run seed
 4. **To start the application locally, run:**
-  ```bash
-  npm start
+   ```bash
+   npm start
 
 ## Usage
 
@@ -71,10 +71,31 @@ Tech-Blog uses PostgreSQL as its database. The Sequelize ORM is used to manage d
 ### Creating the Database:
 To create the database and tables, you can run the `sequelize.sync()` method during the initial setup. The `sequelize.sync()` method is already included in the `server.js` file and will automatically create the necessary tables when the server starts.
 
-### Seeding the Database:
-Run the following command to seed the database with initial data:
+## Deployment
+The application is deployed on Render.
 
-**To start the application locally, run:**
-  ```bash
-  npm start
+### Deployment Steps:
+1. Set up a PostgreSQL instance on Render.
+2. Ensure all environment variables are set correctly in the Render dashboard.
+3. Deploy the application using Render's web service configuration.
+
+## Contributing
+Contributions are what make the open-source community such an amazing place to be, learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+### To contribute:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Questions
+If you have any questions about the project, feel free to reach out:
+
+- GitHub: [Lrbenjamin](https://github.com/Lrbenjamin)
+- live site on render https://tech-blog-2z2h.onrender.com
+
 
